@@ -13,7 +13,7 @@ function draw() {
 
     scoreCard.innerHTML = score
 
-    if (frameCount % 60 == 0) {
+    if (frameCount % 30 == 0) {
         bullets.push(new Bullet())
         score += 1
     }

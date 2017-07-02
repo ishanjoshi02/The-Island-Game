@@ -15,7 +15,7 @@ function Ship() {
     }
 
     this.hitsBullet = function(bullet) {
-        return (sqrt((sq(this.x) - sq(bullet.x) + (sq(this.y) - sq(bullet.y))))) <
+        return (dist(this.x, this.y, bullet.x, bullet.y)) <
             this.radius + bullet.radius
     }
 
